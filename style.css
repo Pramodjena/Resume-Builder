@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 100%;
+  position: relative;
+}
+
+.navbar {
+  width: 100%;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  background-color: #ffffffdc;
+  backdrop-filter: blur(6px);
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.navbar .logo {
+  width: fit-content;
+  padding: 8px 5px;
+  border: 1px solid;
+  background-color: #ffffffdc;
+  border-radius: 5px;
+}
+
+.navbar #logo_right {
+  background-color: #008000;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+.container {
+  margin-top: 50px;
+  padding: 25px;
+  position: relative;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  padding: 10px 7px;
+  background-color: #ffffffdc;
+  font-size: 1.5rem;
+}
+
+.header p {
+  margin-top: 5px;
+}
+
+.temp {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(calc(20% - 20px), 1fr));
+}
+
+.temp a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #0000006e;
+  margin-bottom: 15px;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.temp a:hover {
+  border: 1px solid #024e8b;
+}
+
+.temp a img {
+  max-width: 200px;
+  object-fit: cover;
+}
+
+.temp a button {
+  padding: 18px;
+  border: none;
+  outline: none;
+  background-color: green;
+  margin: 10px 0 0 0;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.temp a button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+}
+
+.foot_container {
+  text-align: center;
+}
+
+.footer-text {
+  margin-bottom: 5px;
+  color: #6c757d;
+  font-size: 20px;
+}
+
+.name {
+  font-size: 25px;
+  font-weight: bold;
+  color: #343a40;
+}
+
+@media (max-width: 768px) {
+  .header {
+    font-size: 1.3rem;
+  }
+  .temp {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(calc(50% - 20px), 1fr));
+  }
+  .temp a img {
+    max-width: 130px;
+    object-fit: cover;
+  }
+  .temp a button {
+    padding: 5px 8px;
+    font-size: 16px;
+  }
+  .footer-text {
+    font-size: 16px;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+}

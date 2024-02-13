@@ -6,9 +6,9 @@
 
 - HTML
 - CSS
-- Javascript 
+- Javascript
 
 ## Live Demo :
 
-- [Deploy Link]
+- [Deploy Link](https://easy-resume-web.netlify.app/)
 

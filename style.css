@@ -36,6 +36,11 @@ body {
   border-radius: 5px;
 }
 
+.logo a {
+  text-decoration: none;
+  color: black;
+}
+
 .container {
   margin-top: 50px;
   padding: 25px;
